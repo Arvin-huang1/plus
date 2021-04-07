@@ -21,9 +21,15 @@
     <ClCompile Include="plus.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="linkedlist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="plus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="linkedlist.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
