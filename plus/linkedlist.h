@@ -4,15 +4,15 @@
 struct ListNode
 {
 
-	float value;
+	float val;
 	ListNode* next;
 	ListNode()
 	{
 
 	}
-	ListNode(float value,ListNode *next = nullptr)
+	ListNode(float val,ListNode *next = nullptr)
 	{
-		this->value = value;
+		this->val = val;
 		this->next = nullptr;
 	}
 	
