@@ -1,7 +1,10 @@
 #include "linkedlist.h"
 #include "vector"
-int ListLength(ListNode *list)
+
+
+int listLength(ListNode *list)
 {
+
 	int len = 0;
 	while (list != nullptr)
 	{
@@ -17,7 +20,7 @@ ListNode* removeNthFromEnd(ListNode* head, int n) {
 	/*
 	if (head->next == nullptr)
 		return nullptr;
-	int len = ListLength(head);
+	int len = listLength(head);
 	if (len == n)
 		return head->next;
 	ListNode* ans = head;
@@ -97,3 +100,31 @@ ListNode* mergeKLists(std::vector<ListNode*>& lists) {
 	}
 	return ans;
 }
+
+//24. 两两交换链表中的节点
+ListNode* swapPairs(ListNode* head) {
+	//1.迭代法，一次交换2个节点
+	/*
+	ListNode* dumpy = new ListNode(0, head);
+	ListNode* cur = dumpy;
+	while (cur->next && cur->next->next)
+	{
+		ListNode* node_1 = cur->next;
+		ListNode* node_2 = cur->next->next;
+		cur->next = node_2;
+		node_1->next = node_2->next;
+		node_2->next = node_1;
+		cur = node_1;
+	}
+	return dumpy->next;
+	*/
+	//2.递归，终止条件head为空或head->next为空
+	if (!head || !head->next)
+	{
+		return head;
+	}
+	ListNode* newhead = head->next;
+	head->next = swapPairs(newhead->next);
+	newhead->next = head;
+}
+

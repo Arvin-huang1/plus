@@ -120,6 +120,7 @@
     <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="effectiveCpp.h" />
     <ClInclude Include="linkedlist.h" />
     <ClInclude Include="plus.h" />
   </ItemGroup>

@@ -15,10 +15,10 @@ struct ListNode
 		this->val = val;
 		this->next = nullptr;
 	}
-	
+
 };
- 
-int ListLength(ListNode *list);
+
+int listLength(ListNode *list);
 
 #endif // !_LINKEDLIST_H_
 //

@@ -6,14 +6,19 @@
 #include "opencv.hpp"
 #include "new.h"
 #include "set"
+#include "effectiveCpp.h"
 using namespace cv;
 using namespace std;
 
 void getMap(Mat &ok_ng, const string &save_path);
 
 void main(){
-
-	letterCombinations("234");
+	float rate = 0.2;
+	int w = 1000;
+	w = w*rate;
+	cout << w << endl;;
+	//printf_s("%d",sizeof(a));
+	//letterCombinations("234");
 	//getAllParentheses(4, result, current);
 
 	//cout << parenthesesValid("))()()")<<endl;
@@ -65,7 +70,7 @@ void main(){
 	head->next = second;
 	second->next = &ff;
 	cout << head->next->next->value << endl;
-	cout << ListLength(head)<< ' '<< ListLength(second) << endl;
+	cout << listLength(head)<< ' '<< listLength(second) << endl;
 	printf("%d", my_plus(3,4));*/
 	
 	system("pause");

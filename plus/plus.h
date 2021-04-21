@@ -11,6 +11,7 @@
 using namespace cv;
 using namespace std;
 
+
  __declspec(dllexport) int my_plus(int a, int b);
 
 
